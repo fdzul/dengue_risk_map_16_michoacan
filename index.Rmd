@@ -240,5 +240,39 @@ risk <- risk_agebs(spde_model = betas_16_michoacan,
 risk_map(risk = risk,staticmap = FALSE)
 ```
 
+### [**Ciudad Lázaro Cárdenas**]{style="color:#7d9029"}
+
+```{r risk_map_lazaro, echo=FALSE}
+risk <- risk_agebs(spde_model = betas_16_michoacan,
+                   hotspots = cases_hotspots_agebs19,
+                   locality = c("Ciudad Lázaro Cárdenas", 
+                                "La Orilla", 
+                                "Las Guacamayas"),
+                   cve_ent = "16",
+                   intensity_perc = 25)
+risk_map(risk = risk,staticmap = FALSE)
+```
+
+### [**Zamora**]{style="color:#7d9029"}
+
+```{r risk_map_zamora, echo=FALSE}
+risk <- risk_agebs(spde_model = betas_16_michoacan,
+                   hotspots = cases_hotspots_agebs19,
+                   locality = "Zamora",
+                   cve_ent = "16",
+                   intensity_perc = 25)
+risk_map(risk = risk,staticmap = FALSE)
+```
+
+### [**Apatzingan**]{style="color:#7d9029"}
+
+```{r risk_map_apatzingan, echo=FALSE}
+risk <- risk_agebs(spde_model = betas_16_michoacan,
+                   hotspots = cases_hotspots_agebs19,
+                   locality = "Apatzingan de la Constitución",
+                   cve_ent = "16",
+                   intensity_perc = 25)
+risk_map(risk = risk,staticmap = FALSE)
+```
 
 
