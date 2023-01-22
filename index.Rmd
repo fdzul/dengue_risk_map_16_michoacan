@@ -151,11 +151,30 @@ hotspots_map(cve_ent = "16",
 
 ### [**Morelia**]{style="color:#990000"}
 
+```{r vector_hotspots_morelia, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_16_michoacan,
+                                 locality = "Morelia",
+                                 cve_ent = "16",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
 
-# **Mapa de Riesgo de la Transmisión de Dengue**
+
+
+# **Mapa del Riesgo de la Transmisión del Dengue**
 
 ## Column {.tabset}
 
-### [**Morelia**]{style="color:#990000"}
+### [**Morelia**]{style="color:#7d9029"}
+
+```{r risk_map_morelia, echo=FALSE}
+risk <- risk_agebs(spde_model = betas_16_michoacan,
+                   hotspots = cases_hotspots_agebs19,
+                   locality = "Morelia",
+                   cve_ent = "16",
+                   intensity_perc = 25)
+risk_map(risk = risk,staticmap = FALSE)
+```
+
 
 
