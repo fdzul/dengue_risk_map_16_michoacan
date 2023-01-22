@@ -113,3 +113,49 @@ hotspots_map(cve_ent = "16",
              static_map = FALSE)
 
 ```
+
+### [**Ciudad Lázaro Cárdenas**]{style="color:#990000"}
+```{r, hotspots_dengue_lazaro, echo=FALSE}
+hotspots_map(cve_ent = "16",
+             locality = c("Ciudad Lázaro Cárdenas", 
+                          "La Orilla", 
+                          "Las Guacamayas"),
+             hotspots = cases_hotspots_agebs19,
+             static_map = FALSE)
+
+```
+
+### [**Zamora**]{style="color:#990000"}
+```{r, hotspots_dengue_zamora, echo=FALSE}
+hotspots_map(cve_ent = "16",
+             locality = "Zamora de Hidalgo",
+             hotspots = cases_hotspots_agebs19,
+             static_map = FALSE)
+
+```
+
+### [**Apatzingan**]{style="color:#990000"}
+```{r, hotspots_dengue_apatzingan, echo=FALSE}
+hotspots_map(cve_ent = "16",
+             locality = "Apatzingan de la Constitución",
+             hotspots = cases_hotspots_agebs19,
+             static_map = FALSE)
+
+```
+
+
+
+# **Hotspots del Vector de la Transmisión de Dengue**
+
+## Column {.tabset}
+
+### [**Morelia**]{style="color:#990000"}
+
+
+# **Mapa de Riesgo de la Transmisión de Dengue**
+
+## Column {.tabset}
+
+### [**Morelia**]{style="color:#990000"}
+
+
