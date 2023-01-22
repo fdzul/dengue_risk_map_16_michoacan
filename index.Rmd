@@ -150,10 +150,74 @@ hotspots_map(cve_ent = "16",
 ## Column {.tabset}
 
 ### [**Morelia**]{style="color:#990000"}
-
 ```{r vector_hotspots_morelia, dpi = 300, warning=FALSE, message=FALSE}
 eggs_hotspots_intensity_map_year(betas = betas_16_michoacan,
                                  locality = "Morelia",
+                                 cve_ent = "16",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+### [**Zamora**]{style="color:#990000"}
+```{r vector_hotspots_zamora, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_16_michoacan,
+                                 locality = "Zamora de Hidalgo",
+                                 cve_ent = "16",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+### [**Huetamo**]{style="color:#990000"}
+```{r vector_hotspots_huetamo, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_16_michoacan,
+                                 locality = "Huetamo de Nuñez",
+                                 cve_ent = "16",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+### [**Carácuaro**]{style="color:#990000"}
+```{r vector_hotspots_caracuaro, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_16_michoacan,
+                                 locality = "Carácuaro de Morelos",
+                                 cve_ent = "16",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+### [**Uruapan**]{style="color:#990000"}
+```{r vector_hotspots_uruapan, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_16_michoacan,
+                                 locality = "Uruapan",
+                                 cve_ent = "16",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+### [**La Piedad**]{style="color:#990000"}
+```{r vector_hotspots_la_piedad, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_16_michoacan,
+                                 locality = "La Piedad de Cabadas",
+                                 cve_ent = "16",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+
+### [**Apatzingan**]{style="color:#990000"}
+```{r vector_hotspots_apatzingan, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_16_michoacan,
+                                 locality = "Apatzingan de la Constitución",
+                                 cve_ent = "16",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+
+### [**Ciudad Lázaro Cárdenas**]{style="color:#990000"}
+```{r vector_hotspots_lazaro, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_16_michoacan,
+                                 locality = "Ciudad Lázaro Cardenas",
                                  cve_ent = "16",
                                  palette = rcartocolor::carto_pal,
                                  name = "SunsetDark")
